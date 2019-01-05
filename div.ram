@@ -1,0 +1,34 @@
+<input> 2 3
+
+; считываем данные 
+read 1 ; делимое
+read 2 ; делитель
+
+load =0
+store 3 
+; result
+
+; пишем код тут
+
+loop:
+load 2
+sub 1
+
+jgtz out
+
+
+
+load 3
+add =1
+store 3
+
+load 1
+sub 2
+store 1
+
+jmp loop
+out:
+; вывод результата
+write 3
+write 1
+halt
