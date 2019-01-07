@@ -1,4 +1,4 @@
-<input> 2 3
+<input> 11 0
 
 ; считываем данные 
 read 1 ; делимое
@@ -9,6 +9,9 @@ store 3
 ; result
 
 ; пишем код тут
+
+load 2 ; проверка делителя на ноль
+jz finish0 
 
 loop:
 load 2
@@ -31,4 +34,9 @@ out:
 ; вывод результата
 write 3
 write 1
+halt
+
+; вывод сообщения деления на ноль
+finish0:
+write ='division-by-zero'
 halt
